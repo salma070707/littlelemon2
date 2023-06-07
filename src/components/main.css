@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+}
+
+.mainC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #495e57;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.mainC .content {
+  /* width: 35%; */
+  width: 400px;
+  /* padding-right: 2rem; */
+  margin-top: 1rem;
+}
+
+h1 {
+  font-family: "Markazi Text";
+  color: #f4ce14;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.content h3 {
+  color: #ffffff;
+  font-family: Karla;
+}
+
+.content p {
+  width: 325px;
+  color: #ffffff;
+  margin: 1rem 0;
+}
+
+button {
+  background: #f4ce14;
+  font-size: 1.1rem;
+  color: #000000;
+  border: none;
+  border-radius: 7px;
+  padding: .6rem;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background: #c7a705;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.mainC .image {
+  /* width: 17%; */
+  width: 260px;
+  margin-top: 1rem;
+  /* position: relative; */
+}
+
+.mainC .image img {
+  width: 100%;
+  /* position: absolute; */
+  border-radius: 7px;
+  height: 260px;
+}
+
+/*------------------------------------------------------------------------
+ -----------------for the special class and card of foods-------------------
+ ----------------------------------------------------------------------------*/
+.special {
+  margin-top: 3rem;
+}
+
+.lr {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.parent {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.card {
+  /* width: 18%; */
+  width: 250px;
+  margin: 1rem 1% 0 1%;
+  border-radius: 7px;
+  background: #ccc;
+}
+
+.card img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 7px 7px 0 0;
+}
+
+.card h4 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card span {
+  text-align: right;
+  color: tomato;
+}
+
+.card p:first-of-type {
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+.card p {
+  padding-left: 1rem;
+  margin-bottom: .6rem;
+}
+
+/*------------------------------------------------------
+----------------- for the testimony rating people --------------
+---------------------------------------------------------------*/
+.testimony {
+  background-color: #495e57;
+  margin-top: 2rem;
+}
+
+.testimony>h1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.7rem;
+}
+
+.testimony .card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* width: 70%; */
+  width: 100%;
+  margin: auto;
+  background-color: transparent;
+}
+
+.card .rate {
+  width: 200px;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.card .rate p {
+  color: #ffffff;
+}
+
+/*-----------------------------------------------------------------
+------------------ for about of the little lemone-------------------
+----------------------------------------------------------------- */
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  margin: 2rem auto 4rem auto;
+  box-sizing: border-box;
+}
+
+.contents {
+  /* width: 35%; */
+  width: 400px;
+  padding-top: 2rem;
+  margin-right: 3rem;
+}
+
+.contents h1 {
+  font-family: "Inria Serif";
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.contents h3 {
+  font-family: "Inria Serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contents p {
+  width: 325px;
+  margin: 2rem 0;
+}
+
+.about .pictures {
+  /* width: 40%; */
+  min-width: 300px;
+  position: relative;
+}
+
+.about .pictures img {
+  width: 50%;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  height: 200px;
+}
+
+.pictures img:first-of-type {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.pictures img:last-of-type {
+  z-index: 2;
+  position: absolute;
+  top: -80px;
+  right: 90px;
+}
+
+/* ------------------------------------------------------------
+------------------media qurey responsive design-----------------
+---------------------------------------------------------------- */
+@media only screen and (max-width: 780px) {
+  .mainC .content {
+    margin-left: 1rem;
+  }
+
+  .about {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .about .contents {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+
+  .contents>p {
+    margin-right: 0;
+  }
+
+  .about .pictures {
+    position: static;
+    max-width: 100%;
+  }
+
+  .pictures img:first-of-type {
+    position: static;
+    width: 45%;
+    margin: 0 2% 0 2%;
+  }
+
+  .pictures img:last-of-type {
+    position: static;
+    width: 45%;
+    margin: 0 2% 0 2%;
+  }
+}

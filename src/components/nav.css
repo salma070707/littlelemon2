@@ -1,0 +1,83 @@
+.topnav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  /* background-color: #ffb703; */
+}
+.topnav > .logo{
+  margin-right: 3rem;
+}
+
+ .topnav ul{
+  display: flex;
+  padding: 0;
+}
+.topnav ul li{
+  list-style: none;
+  margin: 0 .4rem;
+}
+.topnav ul li:last-of-type{
+  margin: 0 .2rem 0 0.1rem;
+}
+.topnav ul li a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #023047;
+  transition: .3s;
+}
+nav>ul li:hover a{
+  border-bottom: 2px solid #f4ce14;
+  color: #f4ce14;
+}
+span.icon{
+  color: #023047;
+  display: none;
+}
+
+/* ------------------------------------------------------------
+------------------media query for responsive design------------
+--------------------------------------------------------------- */
+
+@media only screen and (max-width: 740px){
+  .topnav{
+    justify-content: space-between;
+    align-items: normal;
+    flex-direction: column;
+  }
+  .topnav li{display: none;}
+  .topnav .icon{
+     display: block;
+     font-size: 1.5rem;
+     position: absolute;
+     top: 1rem;
+     right: 0;
+     margin-right: 1rem;
+    }
+  .topnav ul{
+    flex-direction: column;
+  }
+  .topnav .logo{
+    display: block;
+    padding-left: 1rem;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    margin-right: 1rem;
+  }
+  .topnav.responsive li, .topnav.topnav.responsive ul li:last-of-type{
+    display: block;
+    text-align: left;
+    margin: .5rem 0 0 1.4rem;
+  }
+}
